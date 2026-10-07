@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spring 2027 Visual Electives | Newmark J-School</title>
+<meta name="description" content="TV News, Documentary, Video Features, Drone Journalism, Digital Forensics, Photojournalism and Social Video at the Craig Newmark Graduate School of Journalism at CUNY, with student work from each class.">
+<meta property="og:title" content="Spring 2027 Visual Electives | Newmark J-School">
+<meta property="og:description" content="See what students make in each visual elective at the Craig Newmark Graduate School of Journalism at CUNY.">
+<meta property="og:image" content="assets/ny1_gibran.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#FF8200; --orange-25:#FFE0BF; --black:#000; --ink:#231F20; --white:#fff;
+  --cream:#F5EFE6; --gray:#999A9E; --slate:#343F49; --text:#E6E6E6; --muted:#B5B6BA;
+  --display:"Trade Gothic LT Std","Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Trade Gothic LT Std","Barlow Semi Condensed",Arial,Helvetica,sans-serif;
+  --pad:clamp(16px,5vw,96px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{overflow-x:clip;background:#000;color:var(--text);font-family:var(--body);font-size:19px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:var(--white)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--white);outline-offset:2px}
+.bar{position:fixed;top:0;left:0;right:0;height:5vh;max-height:44px;min-height:28px;background:var(--orange);z-index:50;display:flex;align-items:center;padding:0 var(--pad);gap:28px}
+.bar a{color:#000;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.bar a:hover{text-decoration:underline}
+.bar .brand{margin-right:auto}
+@media (max-width:760px){.bar a:not(.brand){display:none}}
+.eyebrow{font-weight:700;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange)}
+h1,h2,h3{font-family:var(--display);font-weight:700;text-transform:uppercase;color:var(--white);line-height:.92}
+h1{font-size:clamp(56px,11vw,184px)}
+h2{font-size:clamp(44px,6vw,104px);overflow-wrap:break-word}
+h3{font-size:clamp(28px,3vw,40px);line-height:1}
+.lede{font-size:clamp(19px,1.6vw,24px);color:var(--white);max-width:40ch}
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;padding:20vh var(--pad) 10vh;overflow:hidden}
+.mosaic{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.mosaic video{width:100%;height:100%;object-fit:cover}
+.scrim{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.92) 0%,rgba(0,0,0,.6) 55%,rgba(0,0,0,.2) 100%)}
+.hero-copy{position:relative;display:flex;flex-direction:column;gap:24px}
+.hero-copy .eyebrow{color:var(--white)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.chips a{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:20px;text-decoration:none;color:#000;background:var(--orange);padding:8px 14px}
+.chips a:hover{background:var(--white)}
+/* pillars */
+.pillars{display:grid;grid-template-columns:1fr 1fr;min-height:90vh}
+.pillar{position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:var(--pad);text-decoration:none}
+.pillar video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.pillar:hover video{transform:scale(1.04)}
+.pillar::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92),rgba(0,0,0,.2) 70%)}
+.pillar>div{position:relative;z-index:1;display:flex;flex-direction:column;gap:12px;max-width:100%}
+.pillar h2{font-size:clamp(40px,5.2vw,96px)}
+.pillar+.pillar{border-left:8px solid var(--orange)}
+.pillars-label{padding:12vh var(--pad) 32px}
+@media (max-width:860px){.pillars{grid-template-columns:1fr}.pillar{min-height:70vh}.pillar+.pillar{border-left:0;border-top:8px solid var(--orange)}}
+/* course */
+.course{padding:14vh var(--pad);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,5vw,96px);align-items:start;border-top:1px solid #222}
+.course.flip .text{order:2}
+.course .text{display:flex;flex-direction:column;gap:20px;position:sticky;top:12vh}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-weight:700;color:var(--white);font-size:18px}
+.meta span+span::before{content:"·";margin-right:20px;color:var(--orange)}
+.course ul{list-style:none;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--slate);padding-top:20px}
+.course li{padding-left:22px;position:relative}
+.course li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:3px;background:var(--orange)}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:14px;text-decoration:none;border:2px solid var(--white);color:var(--white)}
+.btn:hover{background:var(--white);color:#000}
+.btn.solid{background:var(--orange);border-color:var(--orange);color:#000}
+.media{display:flex;flex-direction:column;gap:16px}
+.thumbs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.thumbs video,.thumbs img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.credit{font-size:16px;color:var(--muted)}
+.credit b{color:var(--white)}
+.desc{border-top:1px solid #333;padding:14px 0}
+.desc+.desc{border-top:none;padding-top:0}
+.desc summary{cursor:pointer;font-family:var(--display);text-transform:uppercase;font-size:24px;letter-spacing:1px;color:var(--orange);min-height:44px;display:flex;align-items:center;list-style:none}
+.desc summary::-webkit-details-marker{display:none}
+.desc summary::before{content:"+";display:inline-block;width:24px}
+.desc[open] summary::before{content:"–"}
+.desc p{font-size:17px;line-height:1.6;color:var(--muted);margin:10px 0 0;max-width:62ch}
+.callout{border-left:4px solid var(--orange);padding:4px 0 4px 18px;color:var(--white)}
+@media (max-width:860px){.course{grid-template-columns:1fr}.course.flip .text{order:0}.course .text{position:static}}
+/* youtube facade */
+.yt{position:relative;width:100%;aspect-ratio:16/9;background:#111 center/cover no-repeat;border:0;cursor:pointer;display:block}
+.yt.vertical{aspect-ratio:9/16}
+.yt::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),rgba(0,0,0,0) 50%)}
+.yt .play{position:absolute;left:20px;bottom:20px;z-index:1;display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:22px;color:var(--white)}
+.yt .play i{width:56px;height:56px;background:var(--orange);display:grid;place-items:center}
+.yt .play i::before{content:"";border-left:18px solid #000;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.phones{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:620px}
+.phones .yt{border:8px solid var(--slate);border-radius:28px;overflow:hidden}
+.stack{position:relative;height:clamp(320px,38vw,560px)}
+.stack img{position:absolute;width:78%;background:#fff;box-shadow:0 24px 64px rgba(0,0,0,.6)}
+.stack img:nth-child(1){left:0;top:0;transform:rotate(-4deg)}
+.stack img:nth-child(2){left:18%;top:22%;transform:rotate(3deg)}
+.stack img:nth-child(3){left:8%;top:46%;transform:rotate(-2deg)}
+.gallery{display:grid;grid-template-columns:3fr 2fr;gap:16px}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.section-head{padding:16vh var(--pad) 0}
+/* week */
+.week{padding:14vh var(--pad);background:var(--cream);color:var(--ink)}
+.week h2{color:var(--ink);margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.day h4{font-family:var(--display);text-transform:uppercase;font-size:26px;background:var(--ink);color:#fff;padding:6px 12px;margin-bottom:10px}
+.day.busy h4{background:var(--orange);color:#000}
+.slot{background:#fff;padding:12px 14px;margin-bottom:8px}
+.slot b{display:block;color:var(--ink)}
+.slot span{color:var(--slate);font-size:16px}
+.day.busy .slot{background:var(--orange-25)}
+.note{margin-top:32px;max-width:70ch;border-left:4px solid var(--orange);padding-left:18px}
+@media (max-width:860px){.grid{grid-template-columns:1fr 1fr}}
+/* contact */
+.contact{padding:14vh var(--pad);background:var(--orange);color:#000}
+.contact h2{color:#fff;font-size:clamp(56px,9vw,150px)}
+.contact p{font-size:clamp(20px,2vw,26px);font-weight:700;max-width:50ch;margin-top:24px}
+.contact a{color:#000}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:32px;max-width:1200px}
+.people a{display:flex;flex-direction:column;gap:4px;background:#000;color:#fff;text-decoration:none;padding:20px 22px;min-height:44px}
+.people a:hover{background:var(--ink)}
+.people b{font-family:var(--display);text-transform:uppercase;font-size:30px;line-height:1}
+.people span{font-size:16px;color:var(--muted)}
+.contact p.small{font-size:17px;font-weight:400}
+footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;flex-direction:column;gap:8px}
+@media (prefers-reduced-motion:reduce){video[autoplay]{display:none}.pillar video{transform:none!important}}
+</style>
+</head>
+<body>
+
+<nav class="bar" aria-label="Sections">
+  <a class="brand" href="#top">Newmark J-School · Visual</a>
+  <a href="#tvnews">TV News</a>
+  <a href="#documentary">Documentary</a>
+  <a href="#features">Video Features</a>
+  <a href="#drone">Drone</a>
+  <a href="#forensics">Forensics</a>
+  <a href="#photo">Photo</a>
+  <a href="#social">Social</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="mosaic" aria-hidden="true">
+    <video autoplay muted loop playsinline poster="assets/ny1_crowd.jpg" src="assets/ny1_crowd.mp4"></video>
+    <video autoplay muted loop playsinline poster="assets/noel_library.jpg" src="assets/noel_library.mp4"></video>
+    <video autoplay muted loop playsinline poster="assets/drone_top.jpg" src="assets/drone_top.mp4"></video>
+    <video autoplay muted loop playsinline poster="assets/hong_face.jpg" src="assets/hong_face.mp4"></video>
+  </div>
+  <div class="scrim"></div>
+  <div class="hero-copy">
+    <p class="eyebrow">Craig Newmark Graduate School of Journalism at CUNY</p>
+    <h1>Spring 2027<br>Visual Electives</h1>
+    <p class="lede">Everything playing on this page was made by Newmark students. Here's what you can make this spring.</p>
+    <div class="chips">
+      <a href="#tvnews">TV News</a><a href="#documentary">Documentary</a><a href="#features">Video Features</a><a href="#drone">Drone</a><a href="#forensics">Digital Forensics</a><a href="#photo">Photo</a><a href="#social">Social Video</a>
+    </div>
+  </div>
+</header>
+
+<section class="course" id="tvnews" aria-labelledby="tv-h">
+  <div class="text">
+    <p class="eyebrow">Specialization · Advanced Reporting</p>
+    <h2 id="tv-h">TV News 1</h2>
+    <p class="meta"><span>Stephanie Bertini</span><span>Wednesdays, all day</span><span>6 credits</span></p>
+    <p>The first course of the TV News &amp; Digital Specialization, and open to all students as a 6-credit elective, even if you don't go on to TV News 2 in the fall. It's for anyone who wants the very marketable skills of TV news, in front of the camera as a reporter or anchor, or behind it as a producer, videographer or editor. It can also be your capstone class.</p>
+    <ul>
+      <li>Report on camera, produce, and write anchor voice-overs, with and without sound bites, on deadline for local TV, digital and streaming news</li>
+      <li>Shoot and edit in the style of local TV news</li>
+      <li>Pitch, shoot, write and edit a reporter package in one day, and build an on-camera demo reel</li>
+      <li>Read from a teleprompter, anchor from the studio, and do stand-ups in the field</li>
+      <li>Through the school's partnership with Spectrum NY1 News, student work gets on the air</li>
+      <li>Can be your capstone class</li>
+    </ul>
+    <p class="callout">Meets 9:30 AM–4:20 PM for weeks 1–9, then full reporting days that can run until about 6:30 PM. Required for TV News 2.</p>
+    <details class="desc"><summary>Course description</summary><p>This introductory course is open to all students who choose to take it as a 6-credit elective, even if they don't go on to take TV News 2 in the fall. The course will consist of an intense workload of how to report on camera as a video journalist, how to write on deadline several forms of anchor voice overs with and without sound bites for local television, digital and streaming news programs. Students will brush up on the video and editing skills they learned in the first semester fundamentals course with a goal of shooting and editing in the style of local television news.</p><p>Students will learn how to put together a local news reporter package in the latter part of the semester. They will partner with fellow students to pitch, shoot, write and edit a reporter package all in one day on deadline, providing students with ample material to create an on-camera demo reel. Students will learn how to read from a teleprompter in the broadcast studio. They will start to build confidence in front of the camera by learning how to anchor a newscast from the studio and how to write and execute a reporter standup in the field.</p><p>This course is for anyone interested in learning the highly marketable skills needed to work in television news, both in front of the camera as a reporter and anchor, and behind the camera as a videographer, editor and story producer. This course meets the advanced reporting requirements. Students interested in taking TV News 2 in the fall must take TV News 1 first.</p></details>
+    <div class="links"><a class="btn" href="https://drive.google.com/file/d/1aEjZaO78xnzA5goMfLCPmgbNvukVAGn6/view">Syllabus (Spring 2026)</a><a class="btn" href="mailto:vanessa.botelho@journalism.cuny.edu">Email Vanessa Botelho</a></div>
+  </div>
+  <div class="media">
+    <button class="yt" data-id="38qKg7B1xl4" style="background-image:url(https://i.ytimg.com/vi/38qKg7B1xl4/hqdefault.jpg)" aria-label="Play: Running With a Guide, by Gibran Caroline Boyce"><span class="play"><i></i>Watch the package</span></button>
+    <p class="credit"><b>Gibran Caroline Boyce, “Running With a Guide.”</b> A blind runner and his guide train for the NYC Marathon. Aired on Spectrum NY1 News.</p>
+    <div class="thumbs">
+      <video autoplay muted loop playsinline poster="assets/ny1_crowd.jpg" src="assets/ny1_crowd.mp4" aria-hidden="true"></video>
+      <video autoplay muted loop playsinline poster="assets/ny1_gibran.jpg" src="assets/ny1_gibran.mp4" aria-hidden="true"></video>
+    </div>
+  </div>
+</section>
+
+<section class="course flip" id="documentary" aria-labelledby="doc-h">
+  <div class="text">
+    <p class="eyebrow">Specialization · Application required</p>
+    <h2 id="doc-h">Documentary</h2>
+    <p class="meta"><span>Seminar + Lab</span><span>Wed 2:00–8:20 PM</span><span>3 + 3 credits</span></p>
+    <p class="meta"><span>Yoruba Richen, Stephanie Wang-Breal, Rebecca Blandon</span></p>
+    <ul>
+      <li>The first half of the two-semester Documentary Specialization. You take the Seminar and the Lab together.</li>
+      <li>Develop a 10–20 minute capstone film</li>
+      <li>Make a character sketch and a proof-of-concept reel</li>
+      <li>Pitch to industry professionals, including at our Doc Pitch event in June</li>
+      <li>Film over the summer with a mentor</li>
+      <li>Opportunity for a summer internship at a documentary production company</li>
+      <li>You must apply to be admitted</li>
+    </ul>
+    <p class="callout">The application opens October 15. Apply before spring registration opens on November 18.</p>
+    <details class="desc"><summary>Seminar description</summary><p>This is the first part of the 2-semester Documentary Specialization, which emphasizes both the theory and practice of documentary storytelling. The purpose of this class is to introduce students to the fundamental concepts of narrative storytelling and documentary filmmaking and to stimulate idea development for a 15–20 mins documentary capstone. The emphasis this semester is on documentary styles, story structure, idea development, pitching and proposal writing.</p><p>Students will analyze a number of documentaries and explore many issues related to them – including ethics and relationship between filmmaker and subject. They will write a paper comparing two films in terms of structure, style and content, and they will also write a case study of a film and interview that filmmaker. Students will develop and pitch a documentary story idea, that they will workshop with industry professionals. They will also produce a character sketch as well as a short sample reel/ proof of concept for their film. In the summer, students will work with coaches and continue to develop and shoot their film, completing it in the fall documentary class.</p></details>
+    <details class="desc"><summary>Lab description</summary><p>The documentary form continues to expand, creating new and exciting opportunities for journalists. This specialization track focuses on in-depth project-based documentary journalism, whether it be documentary features, series, video for the web or interactive documentaries.</p><p>The six-credit-hour documentary seminar (the Lab section is 3 hours) will combine the rigor of journalistic research and reporting with an intense focus on building advanced documentary camera skills, story development and editing for structure. Students will learn about different styles and genres of documentary films by watching, writing about, and analyzing documentaries while they are developing their own documentary ideas. They will write proposals for their film projects then pitch them in front of industry professionals.</p><p>Students produce at least two major videos which will move them forward in their story development towards their capstone project. The editing portion will focus on story structure and developing technical editing skills. All the lessons will be a combination of theory and hands-on instruction.</p></details>
+    <div class="links"><a class="btn solid" href="https://docs.google.com/forms/d/1MPHI7r8O1hBEM971-Jre8mD7mcyeGnuXmjd48pizaAE/viewform">Apply to the Documentary program</a><a class="btn" href="https://drive.google.com/file/d/1ryhrb00jraVN9rYYtjjLNXlD8fApK8lJ/view">Seminar syllabus</a><a class="btn" href="https://drive.google.com/file/d/1hcl2bAIVI7scjY1cmSMFrBJS_HlqcvSz/view">Lab syllabus</a><a class="btn" href="mailto:yoruba.richen@journalism.cuny.edu">Email Yoruba Richen</a></div>
+  </div>
+  <div class="media">
+    <button class="yt" data-id="90goYQt0LC8" style="background-image:url(https://i.ytimg.com/vi/90goYQt0LC8/hqdefault.jpg)" aria-label="Play: Noel (I Carry You With Me), by Ana Teresa Colón García"><span class="play"><i></i>Watch the film · 17 min</span></button>
+    <p class="credit"><b>Ana Teresa Colón García, “Noel (I Carry You With Me).”</b> Packing up her late grandfather's home, she and her father uncover an archive of political struggle and FBI surveillance in Puerto Rico. Screening at the Teaneck International Film Festival, November 2026.</p>
+    <div class="thumbs">
+      <video autoplay muted loop playsinline poster="assets/noel_library.jpg" src="assets/noel_library.mp4" aria-hidden="true"></video>
+      <video autoplay muted loop playsinline poster="assets/noel_table.jpg" src="assets/noel_table.mp4" aria-hidden="true"></video>
+    </div>
+  </div>
+</section>
+
+<section class="course" id="features" aria-labelledby="vf-h">
+  <div class="text">
+    <p class="eyebrow">Advanced Reporting</p>
+    <h2 id="vf-h">Video Features</h2>
+    <p class="meta"><span>Anuz Thapa</span><span>Tue 5:30–8:20 PM</span><span>3 credits</span></p>
+    <p>Builds on first-semester video and takes it into mid-form and longer storytelling: the video features that run on major media outlets' websites and on the YouTube channels of independent journalist-creators. It sits between the documentary program and the fast pace of TV news.</p>
+    <ul>
+      <li>Mini-docs, profiles, explainers and creator-style journalism</li>
+      <li>Learn when a story needs a narrator, a host on camera, or no reporter at all</li>
+      <li>Professional cameras, clean audio and lighting</li>
+      <li>Produce 2–3 stories of your choice</li>
+    </ul>
+    <details class="desc"><summary>Course description</summary><p>This course is your opportunity to perfect the video production techniques you learned in the first semester. You will improve your shooting, writing and editing skills so that you can produce professional level video features for any platform, from digital sites like Vox and Vice to streaming news channels like CNN and CBS, to the websites of newspapers and magazines, like The Washington Post and The New Yorker.</p><p>In this class, you will learn to shoot with the C-100, a professional video camera widely used in the industry. You'll capture good clear audio and learn simple lighting techniques to enhance your shots. Using thoughtful storytelling approaches, you will produce 2 – 3 stories of your choice, either reporter-driven (i.e. narrated) or non-narrated (told by the subject.)</p><p>Video is everywhere. Well-told video features will make your resumé stand-out.</p></details>
+    <div class="links"><a class="btn" href="https://drive.google.com/file/d/1jL9ZcFICUFpZf9E-KQp2SbplxHSiHMps/view">Syllabus (Spring 2026)</a></div>
+  </div>
+  <div class="media">
+    <button class="yt" data-id="ZPqXxkki6hQ" style="background-image:url(https://i.ytimg.com/vi/ZPqXxkki6hQ/hqdefault.jpg)" aria-label="Play: video feature by Stephanie Hong"><span class="play"><i></i>Watch the feature</span></button>
+    <p class="credit"><b>Stephanie Hong.</b> A character with a passion job, told without narration.</p>
+    <div class="thumbs">
+      <video autoplay muted loop playsinline poster="assets/hong_face.jpg" src="assets/hong_face.mp4" aria-hidden="true"></video>
+      <video autoplay muted loop playsinline poster="assets/hong_kitchen.jpg" src="assets/hong_kitchen.mp4" aria-hidden="true"></video>
+    </div>
+  </div>
+</section>
+
+<section class="course flip" id="drone" aria-labelledby="dr-h">
+  <div class="text">
+    <p class="eyebrow">New tools · FAA license</p>
+    <h2 id="dr-h">Drone Journalism</h2>
+    <p class="meta"><span>Travis Fox</span><span>Fri 10:00 AM–12:50 PM, weeks 1–7</span><span>2 credits</span></p>
+    <ul>
+      <li>Prepare for and take the FAA Part 107 remote pilot exam. The school covers the exam fee.</li>
+      <li>A hands-on flight day in Brooklyn</li>
+      <li>The law, ethics and privacy of flying for journalism</li>
+      <li>When aerial footage tells the story, and how to get the shot</li>
+    </ul>
+    <details class="desc"><summary>Course description</summary><p>The advent of drone technology gives journalists and filmmakers a powerful new tool — a camera that flies! We will teach you how to fly a drone to achieve the best aerial shots and other uses within the field of journalism. But most importantly, this module will cover how this new tool comes with a slew of legal and ethical questions.</p><p>You must be licensed by the federal government to operate as a drone journalist. The biggest part of this course will be preparation for the FAA's remote pilot exam. It will also introduce you to a variety of local laws and ethical guidelines that are crucial to how you fly as a drone journalist.</p></details>
+    <div class="links"><a class="btn" href="https://drone.travisfox.com">Syllabus</a><a class="btn" href="mailto:travis.fox@journalism.cuny.edu">Email Travis Fox</a></div>
+  </div>
+  <div class="media">
+    <button class="yt" data-id="n7J4Pi1dxNM" style="background-image:url(https://i.ytimg.com/vi/n7J4Pi1dxNM/hqdefault.jpg)" aria-label="Play: student drone flight footage"><span class="play"><i></i>Watch the flight</span></button>
+    <p class="credit"><b>Student flight footage</b> from Drone Journalism. [Student names]</p>
+    <div class="thumbs">
+      <video autoplay muted loop playsinline poster="assets/drone_top.jpg" src="assets/drone_top.mp4" aria-hidden="true"></video>
+      <video autoplay muted loop playsinline poster="assets/drone_reveal.jpg" src="assets/drone_reveal.mp4" aria-hidden="true"></video>
+    </div>
+  </div>
+</section>
+
+<section class="course" id="forensics" aria-labelledby="df-h">
+  <div class="text">
+    <p class="eyebrow">New tools · Open source</p>
+    <h2 id="df-h" style="font-size:clamp(40px,4.6vw,84px)">Digital Forensics for Visual Investigations</h2>
+    <p class="meta"><span>Stella Cooper</span><span>Wed 5:30–8:20 PM</span><span>2 credits</span></p>
+    <ul>
+      <li>Verify photos and videos: geolocation, chronolocation, detecting AI generated imagery</li>
+      <li>Satellite imagery, and flight and ship tracking</li>
+      <li>Analyze and interpret visual evidence to build investigations</li>
+      <li>Pitch, run and present your own visual investigation</li>
+    </ul>
+    <details class="desc"><summary>Course description</summary><p>The rise of social media has brought with it an enormous amount of user-generated multimedia content that reporters often use as evidence in news stories and videos. It is crucial for journalism students navigating the digital age to be equipped with the skills necessary to discover and verify photos and videos on social media and convincingly present visual evidence to an audience to effectively neutralize misinformation.</p><p>And in the last few years, AI-generated photos and videos have flooded the internet with increasingly realistic, yet entirely fake images designed to deceive audiences at a massive scale.</p><p>This 10-week course in visual investigations teaches students to build open-source investigations from the ground up using an array of forensic techniques and digital research tools. By the end of the course, students will have learned the basics of the technical skillset required to pitch, design, and execute their own visual investigations and more effectively neutralize misinformation.</p></details>
+    <div class="links"><a class="btn" href="https://drive.google.com/file/d/1_l7Y4r9vRtF-PAHfOmlDDYNUbqQ_LAyr/view">Syllabus (Spring 2026)</a></div>
+  </div>
+  <div class="media">
+    <div class="stack">
+      <img src="assets/forensics_4.jpg" alt="Student slide: tracking Canadian plastic waste exports in the UN Comtrade database" loading="lazy">
+      <img src="assets/forensics_16.jpg" alt="Slide showing satellite imagery of the recycling plant in Malaysia where the shipment ended up" loading="lazy">
+      <img src="assets/forensics_10.jpg" alt="Slide tracking plastic waste shipments with trade data" loading="lazy">
+    </div>
+    <p class="credit"><b>Laura Pellicer, “Where is Quebec's plastic recycling ending up?”</b> Using trade data, ship tracking and satellite imagery, she followed plastic from her hometown to a recycling plant in Malaysia.</p>
+  </div>
+</section>
+
+<section class="course flip" id="photo" aria-labelledby="ph-h">
+  <div class="text">
+    <p class="eyebrow">Photo</p>
+    <h2 id="ph-h">Photo&shy;journalism</h2>
+    <p class="meta"><span>Jim Estrin</span><span>Mon 9:30 AM–12:20 PM</span><span>3 credits</span></p>
+    <ul>
+      <li>A hands-on workshop, from camera basics to the photo essay</li>
+      <li>Portraits, news events and feature photos</li>
+      <li>Canon DSLRs (or your own camera) and Photoshop</li>
+      <li>Learn to present your work to editors</li>
+    </ul>
+    <p class="callout">Advanced Photojournalism follows in the fall.</p>
+    <details class="desc"><summary>Course description</summary><p>This is an introductory course in photojournalism and builds on material introduced in Craft and other courses during the first semester. It is structured as a hands-on workshop. Instruction will progress from basic camera operation and the news “one shot” to more comprehensive, long-form visual storytelling. Using the journalism school's Canon dSLRs (those who have equivalent cameras of their own are encouraged to use them), students will learn how to shoot portraits, cover news events and produce photo essays.</p><p>The course will also teach post-production skills (Adobe Photoshop) and address how to present photos to editors and news outlets. Intro photo is structured as a stand-alone course as well as a precursor to the advanced photo course.</p></details>
+    <div class="links"><a class="btn" href="syllabi/photojournalism-syllabus.pdf">Syllabus (Fall 2025)</a><a class="btn" href="mailto:john.smock@journalism.cuny.edu">Email John Smock</a></div>
+  </div>
+  <div class="media">
+    <div class="gallery">
+      <img src="assets/photo_jimenez.jpg" alt="Dancers mid-step in a black-box studio during a ballroom class" loading="lazy">
+      <img src="assets/photo_alex.jpg" alt="A dancer silhouetted against tall windows in an empty studio" loading="lazy">
+    </div>
+    <p class="credit">Feature photos by <b>Celina Jimenez</b> and <b>Alex O'Connell</b>.</p>
+  </div>
+</section>
+
+<section class="course" id="social" aria-labelledby="sv-h">
+  <div class="text">
+    <p class="eyebrow">Video &amp; social</p>
+    <h2 id="sv-h">Social Video</h2>
+    <p class="meta"><span>John Smock</span><span>Wed 10:00 AM–12:50 PM</span><span>2 credits</span></p>
+    <ul>
+      <li>Learn the visual language of each platform</li>
+      <li>Explainers, animations, text-on-video and live coverage</li>
+      <li>Shot and edited on a smartphone kit</li>
+      <li>Prerequisite: first-semester video fundamentals</li>
+    </ul>
+    <details class="desc"><summary>Course description</summary><p>Video accounts for more than 50% of mobile traffic and will increasingly dominate the social media channels you frequent: Facebook, Twitter, Instagram, Snapchat, YouTube and Tik Tok. Each of these channels speaks with a different grammar. Now's the time to develop fluency in these new visual languages.</p><p>In this hands-on class, we'll look at the tools, techniques and visual language unique to each platform and create work in each session. Classes will use smartphone kits as a primary visual reporting and editing tool to produce explainers, animations, streaming coverage, text on video. We will also work with archival and found footage. In addition to individual projects produced to complement work in other courses and capstone projects, students will produce a group project with a partner media organization.</p></details>
+    <div class="links"><a class="btn" href="syllabi/social-video-syllabus.pdf">Syllabus (Fall 2026)</a><a class="btn" href="mailto:john.smock@journalism.cuny.edu">Email John Smock</a></div>
+  </div>
+  <div class="media">
+    <div class="phones">
+      <button class="yt vertical" data-id="-84oNLJKlmY" style="background-image:url(assets/social_ispir.jpg)" aria-label="Play: Who pays the pied-à-terre tax, by Angelina Ispir"><span class="play"><i></i></span></button>
+      <button class="yt vertical" data-id="SqdY9k4Vsb4" style="background-image:url(assets/social_milanez.jpg)" aria-label="Play: What no tax on tips really means, by Irene Milanez"><span class="play"><i></i></span></button>
+    </div>
+    <p class="credit"><b>Angelina Ispir</b> on New York's proposed pied-à-terre tax, and <b>Irene Milanez</b> on what “no tax on tips” really means.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="ct-h">
+  <h2 id="ct-h">Questions?</h2>
+  <p>Advising appointments start October 19, and spring registration opens November 18. Talk to us before then.</p>
+  <div class="people">
+    <a href="mailto:travis.fox@journalism.cuny.edu"><b>Travis Fox</b><span>Director of Visual Journalism · all visual electives</span></a>
+    <a href="mailto:vanessa.botelho@journalism.cuny.edu"><b>Vanessa Botelho</b><span>Director, TV News &amp; Digital Specialization</span></a>
+    <a href="mailto:yoruba.richen@journalism.cuny.edu"><b>Yoruba Richen</b><span>Documentary program</span></a>
+    <a href="mailto:john.smock@journalism.cuny.edu"><b>John Smock</b><span>Director of Photojournalism · Photo and Social Video</span></a>
+  </div>
+  <p class="small">Most syllabus links open in the school's Google Drive. Sign in with your journalism.cuny.edu account to view them, or browse the full <a href="https://bit.ly/NewmarkJCourseSyllabi">course syllabi archive</a>.</p>
+</section>
+
+<footer>
+  <p>The Craig Newmark Graduate School of Journalism at CUNY is a public graduate journalism school that prepares students from diverse economic, racial, and cultural backgrounds to produce high-quality journalism. In 2024, the school launched a campaign to provide free tuition, in perpetuity, to all of its students.</p>
+  <p>Student work is shown with permission. Schedules are subject to change; check the official class schedule.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.yt').forEach(function(b){
+  b.addEventListener('click',function(){
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';
+    f.title=b.getAttribute('aria-label').replace('Play: ','');
+    f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen=true;
+    b.replaceChildren(f); b.style.cursor='default';
+  },{once:true});
+});
+</script>
+</body>
+</html>
