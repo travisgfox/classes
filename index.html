@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Spring 2027 Visual Electives | Newmark J-School</title>
 <meta name="description" content="TV News, Documentary, Video Features, Drone Journalism, Digital Forensics, Photojournalism and Social Video at the Craig Newmark Graduate School of Journalism at CUNY, with student work from each class.">
@@ -127,6 +128,14 @@ h3{font-size:clamp(28px,3vw,40px);line-height:1}
 .contact p.small{font-size:17px;font-weight:400}
 footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;flex-direction:column;gap:8px}
 @media (prefers-reduced-motion:reduce){video[autoplay]{display:none}.pillar video{transform:none!important}}
+.loops{display:grid;gap:16px}
+.loops video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.credit a{color:var(--orange)}
+.yt.playing{cursor:default}
+.yt.playing::after{display:none}
+.stack{height:auto!important;aspect-ratio:1/0.92;margin-bottom:24px}
+.gallery{grid-template-columns:1fr!important}
+.gallery img{height:auto!important}
 </style>
 </head>
 <body>
@@ -166,16 +175,15 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
     <p class="eyebrow">Specialization · Advanced Reporting</p>
     <h2 id="tv-h">TV News 1</h2>
     <p class="meta"><span>Stephanie Bertini</span><span>Wednesdays, all day</span><span>6 credits</span></p>
-    <p>The first course of the TV News &amp; Digital Specialization, and open to all students as a 6-credit elective, even if you don't go on to TV News 2 in the fall. It's for anyone who wants the very marketable skills of TV news, in front of the camera as a reporter or anchor, or behind it as a producer, videographer or editor. It can also be your capstone class.</p>
     <ul>
-      <li>Report on camera, produce, and write anchor voice-overs, with and without sound bites, on deadline for local TV, digital and streaming news</li>
-      <li>Shoot and edit in the style of local TV news</li>
-      <li>Pitch, shoot, write and edit a reporter package in one day, and build an on-camera demo reel</li>
-      <li>Read from a teleprompter, anchor from the studio, and do stand-ups in the field</li>
-      <li>Through the school's partnership with Spectrum NY1 News, student work gets on the air</li>
-      <li>Can be your capstone class</li>
+      <li>Open to all students.</li>
+      <li>Report on camera and produce.</li>
+      <li>Shoot and edit in the style of local TV news.</li>
+      <li>Fast paced, same day turn around.</li>
+      <li>Anchor from the studio.</li>
+      <li>Through our Spectrum NY1 News partnership, student work gets on the air.</li>
+      <li>Can be your capstone class.</li>
     </ul>
-    <p class="callout">Meets 9:30 AM–4:20 PM for weeks 1–9, then full reporting days that can run until about 6:30 PM. Required for TV News 2.</p>
     <details class="desc"><summary>Course description</summary><p>This introductory course is open to all students who choose to take it as a 6-credit elective, even if they don't go on to take TV News 2 in the fall. The course will consist of an intense workload of how to report on camera as a video journalist, how to write on deadline several forms of anchor voice overs with and without sound bites for local television, digital and streaming news programs. Students will brush up on the video and editing skills they learned in the first semester fundamentals course with a goal of shooting and editing in the style of local television news.</p><p>Students will learn how to put together a local news reporter package in the latter part of the semester. They will partner with fellow students to pitch, shoot, write and edit a reporter package all in one day on deadline, providing students with ample material to create an on-camera demo reel. Students will learn how to read from a teleprompter in the broadcast studio. They will start to build confidence in front of the camera by learning how to anchor a newscast from the studio and how to write and execute a reporter standup in the field.</p><p>This course is for anyone interested in learning the highly marketable skills needed to work in television news, both in front of the camera as a reporter and anchor, and behind the camera as a videographer, editor and story producer. This course meets the advanced reporting requirements. Students interested in taking TV News 2 in the fall must take TV News 1 first.</p></details>
     <div class="links"><a class="btn" href="https://drive.google.com/file/d/1aEjZaO78xnzA5goMfLCPmgbNvukVAGn6/view">Syllabus (Spring 2026)</a><a class="btn" href="mailto:vanessa.botelho@journalism.cuny.edu">Email Vanessa Botelho</a></div>
   </div>
@@ -196,10 +204,9 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
     <p class="meta"><span>Seminar + Lab</span><span>Wed 2:00–8:20 PM</span><span>3 + 3 credits</span></p>
     <p class="meta"><span>Yoruba Richen, Stephanie Wang-Breal, Rebecca Blandon</span></p>
     <ul>
-      <li>The first half of the two-semester Documentary Specialization. You take the Seminar and the Lab together.</li>
       <li>Develop a 10–20 minute capstone film</li>
       <li>Make a character sketch and a proof-of-concept reel</li>
-      <li>Pitch to industry professionals, including at our Doc Pitch event in June</li>
+      <li>Pitch to industry professionals</li>
       <li>Film over the summer with a mentor</li>
       <li>Opportunity for a summer internship at a documentary production company</li>
       <li>You must apply to be admitted</li>
@@ -224,11 +231,10 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
     <p class="eyebrow">Advanced Reporting</p>
     <h2 id="vf-h">Video Features</h2>
     <p class="meta"><span>Anuz Thapa</span><span>Tue 5:30–8:20 PM</span><span>3 credits</span></p>
-    <p>Builds on first-semester video and takes it into mid-form and longer storytelling: the video features that run on major media outlets' websites and on the YouTube channels of independent journalist-creators. It sits between the documentary program and the fast pace of TV news.</p>
     <ul>
       <li>Mini-docs, profiles, explainers and creator-style journalism</li>
-      <li>Learn when a story needs a narrator, a host on camera, or no reporter at all</li>
-      <li>Professional cameras, clean audio and lighting</li>
+      <li>Stories that need a narrator, a host or no reporter at all</li>
+      <li>Professional cameras</li>
       <li>Produce 2–3 stories of your choice</li>
     </ul>
     <details class="desc"><summary>Course description</summary><p>This course is your opportunity to perfect the video production techniques you learned in the first semester. You will improve your shooting, writing and editing skills so that you can produce professional level video features for any platform, from digital sites like Vox and Vice to streaming news channels like CNN and CBS, to the websites of newspapers and magazines, like The Washington Post and The New Yorker.</p><p>In this class, you will learn to shoot with the C-100, a professional video camera widely used in the industry. You'll capture good clear audio and learn simple lighting techniques to enhance your shots. Using thoughtful storytelling approaches, you will produce 2 – 3 stories of your choice, either reporter-driven (i.e. narrated) or non-narrated (told by the subject.)</p><p>Video is everywhere. Well-told video features will make your resumé stand-out.</p></details>
@@ -248,23 +254,22 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
   <div class="text">
     <p class="eyebrow">New tools · FAA license</p>
     <h2 id="dr-h">Drone Journalism</h2>
-    <p class="meta"><span>Travis Fox</span><span>Fri 10:00 AM–12:50 PM, weeks 1–7</span><span>2 credits</span></p>
+    <p class="meta"><span>Travis Fox</span><span>Fri 10:00 AM–12:50 PM, weeks 9–15</span><span>2 credits</span></p>
     <ul>
-      <li>Prepare for and take the FAA Part 107 remote pilot exam. The school covers the exam fee.</li>
-      <li>A hands-on flight day in Brooklyn</li>
-      <li>The law, ethics and privacy of flying for journalism</li>
-      <li>When aerial footage tells the story, and how to get the shot</li>
+      <li>Prep and pass the FAA Part 107 remote pilot exam.</li>
+      <li>The school covers the exam fee.</li>
+      <li>Flight training.</li>
+      <li>The law and ethics of drone journalism</li>
     </ul>
     <details class="desc"><summary>Course description</summary><p>The advent of drone technology gives journalists and filmmakers a powerful new tool — a camera that flies! We will teach you how to fly a drone to achieve the best aerial shots and other uses within the field of journalism. But most importantly, this module will cover how this new tool comes with a slew of legal and ethical questions.</p><p>You must be licensed by the federal government to operate as a drone journalist. The biggest part of this course will be preparation for the FAA's remote pilot exam. It will also introduce you to a variety of local laws and ethical guidelines that are crucial to how you fly as a drone journalist.</p></details>
     <div class="links"><a class="btn" href="https://drone.travisfox.com">Syllabus</a><a class="btn" href="mailto:travis.fox@journalism.cuny.edu">Email Travis Fox</a></div>
   </div>
   <div class="media">
-    <button class="yt" data-id="n7J4Pi1dxNM" style="background-image:url(https://i.ytimg.com/vi/n7J4Pi1dxNM/hqdefault.jpg)" aria-label="Play: student drone flight footage"><span class="play"><i></i>Watch the flight</span></button>
-    <p class="credit"><b>Student flight footage</b> from Drone Journalism. [Student names]</p>
-    <div class="thumbs">
-      <video autoplay muted loop playsinline poster="assets/drone_top.jpg" src="assets/drone_top.mp4" aria-hidden="true"></video>
-      <video autoplay muted loop playsinline poster="assets/drone_reveal.jpg" src="assets/drone_reveal.mp4" aria-hidden="true"></video>
+    <div class="loops">
+      <video autoplay muted loop playsinline poster="assets/drone_top.jpg" src="assets/drone_top.mp4" aria-label="Student drone footage looking straight down at shipwrecks in green water"></video>
+      <video autoplay muted loop playsinline poster="assets/drone_reveal.jpg" src="assets/drone_reveal.mp4" aria-label="Student drone footage rising over trees to reveal a bay and skyline"></video>
     </div>
+    <p class="credit">Student flight footage: <b>Nazeefa Ahmed</b> &amp; <b>Baron Carr</b></p>
   </div>
 </section>
 
@@ -275,9 +280,9 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
     <p class="meta"><span>Stella Cooper</span><span>Wed 5:30–8:20 PM</span><span>2 credits</span></p>
     <ul>
       <li>Verify photos and videos: geolocation, chronolocation, detecting AI generated imagery</li>
-      <li>Satellite imagery, and flight and ship tracking</li>
+      <li>Satellite imagery and flight and ship tracking</li>
       <li>Analyze and interpret visual evidence to build investigations</li>
-      <li>Pitch, run and present your own visual investigation</li>
+      <li>Run and present your own investigation</li>
     </ul>
     <details class="desc"><summary>Course description</summary><p>The rise of social media has brought with it an enormous amount of user-generated multimedia content that reporters often use as evidence in news stories and videos. It is crucial for journalism students navigating the digital age to be equipped with the skills necessary to discover and verify photos and videos on social media and convincingly present visual evidence to an audience to effectively neutralize misinformation.</p><p>And in the last few years, AI-generated photos and videos have flooded the internet with increasingly realistic, yet entirely fake images designed to deceive audiences at a massive scale.</p><p>This 10-week course in visual investigations teaches students to build open-source investigations from the ground up using an array of forensic techniques and digital research tools. By the end of the course, students will have learned the basics of the technical skillset required to pitch, design, and execute their own visual investigations and more effectively neutralize misinformation.</p></details>
     <div class="links"><a class="btn" href="https://drive.google.com/file/d/1_l7Y4r9vRtF-PAHfOmlDDYNUbqQ_LAyr/view">Syllabus (Spring 2026)</a></div>
@@ -288,7 +293,7 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
       <img src="assets/forensics_16.jpg" alt="Slide showing satellite imagery of the recycling plant in Malaysia where the shipment ended up" loading="lazy">
       <img src="assets/forensics_10.jpg" alt="Slide tracking plastic waste shipments with trade data" loading="lazy">
     </div>
-    <p class="credit"><b>Laura Pellicer, “Where is Quebec's plastic recycling ending up?”</b> Using trade data, ship tracking and satellite imagery, she followed plastic from her hometown to a recycling plant in Malaysia.</p>
+    <p class="credit"><b>Laura Pellicer, “Where is Quebec's plastic recycling ending up?”</b> Using trade data, ship tracking and satellite imagery, she followed plastic from her hometown to a recycling plant in Malaysia. <a href="https://docs.google.com/presentation/d/10ieEKu7WnA9hiHYeMkB5J5v5vWDdT5Q3twrQ7-C5OPo/edit?usp=sharing" target="_blank" rel="noopener">See Laura's full investigation&nbsp;→</a></p>
   </div>
 </section>
 
@@ -300,10 +305,9 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
     <ul>
       <li>A hands-on workshop, from camera basics to the photo essay</li>
       <li>Portraits, news events and feature photos</li>
-      <li>Canon DSLRs (or your own camera) and Photoshop</li>
+      <li>Canon DSLRs and Photoshop</li>
       <li>Learn to present your work to editors</li>
     </ul>
-    <p class="callout">Advanced Photojournalism follows in the fall.</p>
     <details class="desc"><summary>Course description</summary><p>This is an introductory course in photojournalism and builds on material introduced in Craft and other courses during the first semester. It is structured as a hands-on workshop. Instruction will progress from basic camera operation and the news “one shot” to more comprehensive, long-form visual storytelling. Using the journalism school's Canon dSLRs (those who have equivalent cameras of their own are encouraged to use them), students will learn how to shoot portraits, cover news events and produce photo essays.</p><p>The course will also teach post-production skills (Adobe Photoshop) and address how to present photos to editors and news outlets. Intro photo is structured as a stand-alone course as well as a precursor to the advanced photo course.</p></details>
     <div class="links"><a class="btn" href="syllabi/photojournalism-syllabus.pdf">Syllabus (Fall 2025)</a><a class="btn" href="mailto:john.smock@journalism.cuny.edu">Email John Smock</a></div>
   </div>
@@ -323,9 +327,8 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
     <p class="meta"><span>John Smock</span><span>Wed 10:00 AM–12:50 PM</span><span>2 credits</span></p>
     <ul>
       <li>Learn the visual language of each platform</li>
-      <li>Explainers, animations, text-on-video and live coverage</li>
+      <li>Animations, text-on-video and live coverage</li>
       <li>Shot and edited on a smartphone kit</li>
-      <li>Prerequisite: first-semester video fundamentals</li>
     </ul>
     <details class="desc"><summary>Course description</summary><p>Video accounts for more than 50% of mobile traffic and will increasingly dominate the social media channels you frequent: Facebook, Twitter, Instagram, Snapchat, YouTube and Tik Tok. Each of these channels speaks with a different grammar. Now's the time to develop fluency in these new visual languages.</p><p>In this hands-on class, we'll look at the tools, techniques and visual language unique to each platform and create work in each session. Classes will use smartphone kits as a primary visual reporting and editing tool to produce explainers, animations, streaming coverage, text on video. We will also work with archival and found footage. In addition to individual projects produced to complement work in other courses and capstone projects, students will produce a group project with a partner media organization.</p></details>
     <div class="links"><a class="btn" href="syllabi/social-video-syllabus.pdf">Syllabus (Fall 2026)</a><a class="btn" href="mailto:john.smock@journalism.cuny.edu">Email John Smock</a></div>
@@ -359,12 +362,15 @@ footer{padding:48px var(--pad);color:var(--muted);font-size:15px;display:flex;fl
 <script>
 document.querySelectorAll('.yt').forEach(function(b){
   b.addEventListener('click',function(){
+    if(location.protocol==='file:'){window.open('https://www.youtube.com/watch?v='+b.dataset.id,'_blank','noopener');return;}
     var f=document.createElement('iframe');
-    f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';
+    f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0&playsinline=1';
     f.title=b.getAttribute('aria-label').replace('Play: ','');
     f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
-    f.allowFullscreen=true;
-    b.replaceChildren(f); b.style.cursor='default';
+    f.allowFullscreen=true; f.referrerPolicy='strict-origin-when-cross-origin';
+    var w=document.createElement('div');
+    w.className=b.className+' playing';
+    w.appendChild(f); b.replaceWith(w);
   },{once:true});
 });
 </script>
